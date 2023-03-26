@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;800;900&display=swap');
+:root{
+    /* --primary-color-hue: 331;
+    --dark-color-lightness:17%;
+    --light-color-lightness:95%; */
+    --Big-font-size:20px;
+    --Small-font-size:13px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    display: flex;
+    background: rgb(219, 218, 218);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.darkMode{
+    background:#222;
+}
+.darkMode .box ,.darkMode .option{
+    background: rgb(70, 69, 69);
+}
+.darkMode .box .menubox h4{
+    color: #ddd;
+}
+.darkMode .box .menubox h4 span{
+    color: #aaa;
+}
+.darkMode .option{
+    border-top: 1px solid rgb(98, 97, 97);
+}
+.darkMode .option li label span{
+    color: #aaa;
+}
+.darkMode .option li label .action i{
+    background: #666;
+}
+.main{
+    box-shadow: 0 30px 30px black;
+
+}
+.box{
+
+    position: relative;
+    background: rgb(228, 228, 226);
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    min-width: 35vw;
+    padding: 30px;
+    border-radius: 14px;
+    
+}
+.menubox{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.menubox .imgbox{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background:red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.menubox .imgbox img{
+    width: 83px;
+    position: absolute;
+    top: 0;
+    left: -19px;
+}
+.box .menubox h4{
+    font-weight:600;
+    font-size: var(--Big-font-size);
+    line-height: 20px;
+    color: #333;
+}
+.box .menubox h4 span{
+    font-weight: 500;
+    font-size: var(--Small-font-size);
+    color: rgb(96, 96, 96);
+}
+
+
+/* Arror styling */
+.box .crros-btn{
+    background: transparent;
+    border: none;
+    width: 34px;
+    height: 28px;
+}
+
+.box .crros {
+    width: 17px;
+    position: relative;
+    flex-direction: column;
+    top: -15px;
+   
+  }
+  
+  .box .crros .line {
+	display: block;
+    position: relative;
+    top: 22px;
+    height: 1px;
+    width: 100%;
+    border-radius: 0;
+    background: #000000;
+  }
+  
+  .box .crros .line1 {
+	transform-origin: 83% 100%;
+    transform: rotate(38deg);
+	transition: transform 0.1s ease-in-out;
+  }
+  
+  .box .crros .line2 {
+    transform-origin: 100% 100%;
+    transform: rotate(142deg);
+	transition: transform 0.1s ease-in-out;
+  }
+
+/* Hidden box */
+.option{
+    display: none;
+    position: relative;
+    margin-top: 6px;
+    border-top: 1px solid rgb(180, 178, 178);
+    background: rgb(228, 228, 226);
+    line-height: 4;
+    padding: 0 40px 8px 45px;
+}
+.option li{
+    list-style: none;
+    margin: 8px 0;
+}
+.option input{
+    margin-right: 6px;
+    border-radius: 7px;
+    background: transparent;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: blink;
+}
+.option button{
+    font-weight: 600;
+    width: 49px;
+    border-radius: 8px;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.option button:hover{
+    opacity: 65%;
+}
+.option li label{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+}
+.option li label span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    color: rgb(55, 53, 53);
+}
+.option li label span .uil{
+    margin-right: 10px;
+
+}
+.option li label .action{
+    position: relative;
+}
+.option li label .action input{
+    appearance: none;
+}
+.option li label .action i{
+    position: relative;
+    width: 44px;
+    height: 18px;
+    background: rgb(213, 210, 210);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.option li label .action input:checked ~ i{
+    background:#2aa0ff;
+}
+.option li label .action i::before{
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px black;
+    transition: 0.5s;
+}
+.option li label .action input:checked ~ i::before{
+    left: calc(100% - 12.5px);
+}
+
+

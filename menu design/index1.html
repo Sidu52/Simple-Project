@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>Menu</title>
+</head>
+<body>
+    <!-- main code -->
+
+    
+    <div class="main">
+        <div class="box">
+            <div class="menubox">
+                <div class="imgbox">
+                    <img src="https://media.istockphoto.com/photos/smiling-indian-man-looking-at-camera-picture-id1270067126?k=20&m=1270067126&s=170667a&w=0&h=qcveK8RhZyUglSueV-X-aiFTnZCn4y5z13TgPckiYjw=" alt="">
+                </div>
+                <h4  id="heading">Sidhu Alston<br><span class="menucolor">Create by Sidhu</span></h4>
+            </div>
+            <button class="crros-btn" onclick="crrosbutton()">
+                <div class="crros">
+                    <span id="l1" class="line line1"></span>
+                    <span id="m1" class="line line2"></span>
+                </div>
+            </button>
+        </div>
+        <div class="hidden-box" >
+            <ul class="option" id="hide-box">
+                <li>
+                    <label>
+                        <span class="title"><i class="uil uil-moon"></i><p class="menucolor">Dark-Mode</p></span>
+                        <span class="action">
+                            <input type="checkbox" id="dark">
+                            <i></i>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="title"><i class="uil uil-paint-tool"></i><p class="menucolor">Bg-Color</p></span>
+                        <span class="action">
+                            <input type="text" id="Bg-color" placeholder="Enter Color else Reset">
+                            <button onclick="changecolor()">BG.</button>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="title"><i class="uil uil-pen"></i><p class="menucolor">text-color</p></span>
+                        <span class="action">
+                        <input type="text" id="text-color" placeholder="Enter Color"> 
+                        <button onclick="textcolor()">Click</button>
+                        </span>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        <span class="title"><i class="uil uil-text-size"></i><p class="menucolor">font-size</p></span>
+                        <span class="action1">
+                            <input type="number" id="text-size" placeholder="Enter font size">
+                            <button onclick="textsize()">Click</button>
+                        </span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="script1.js"></script>
+</body>
+</html>
